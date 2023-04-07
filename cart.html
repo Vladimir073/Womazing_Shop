@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div id="modal">
+        <div id="modal__overlay"></div>
+        <div id="modal__wrapper">
+            <div id="modal__wrapper-form">
+                <img src="image/Close.png" id="modal__close" alt="btn-close">
+                <h3 class="modal__title title__h3">Заказать обратный звонок</h3>
+                <form action="mail.php" class="form js-form" method="get" id="form-modal">
+                    <input type="text" class="modal__form-input subtitle margin" name="name" placeholder="Имя" id="last-name" required>
+                    <input type="email" class="modal__form-input subtitle margin" name="email" placeholder="E-mail" id="email" required>
+                    <input type="tel" class="modal__form-input subtitle margin" name="tel" placeholder="Телефон" id="tel" required>
+                    <button type="submit" class="button-submit btn subtitle margin" data-submit>Заказать звонок</button>
+                </form>
+            </div>
+            <div id="message-for-user">
+                <h3 class="modal__title title__h3">Отлично! Мы скоро вам перезвоним.</h3>
+                <button type="submit" class="button-close-messange subtitle"> Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <div class="wrapper__header">
+                <a href="#" class="header__logo">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a href="index.html" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="shop.html" class="nav__link">Магазин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about_brand.html" class="nav__link">О бренде</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacts.html" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <button href="#" class="header__call-order">
+                        <svg class="header__call-image" width="27" height="27" viewBox="0 0 27 27" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_18947_425)">
+                                <path d="M8.25241 7.81643C6.75058 9.31823 6.75058 11.7618 8.25238 13.2636L9.05007 12.4659C7.98816 11.404 7.98814 9.67613 9.0501 8.61417C10.112 7.55224 11.8399 7.55224 12.9018 8.61414L13.6995 7.81646C12.1978 6.31463 9.75418 6.31466 8.25241 7.81643Z" fill="#6E9C9F"/>
+                                <path d="M9.84127 9.39119C9.2091 10.0234 9.20907 11.052 9.84124 11.6842L10.639 10.8865C10.5458 10.7934 10.4945 10.6695 10.4945 10.5377C10.4945 10.406 10.5458 10.2821 10.639 10.1889C10.7322 10.0958 10.856 10.0444 10.9878 10.0444C11.1195 10.0444 11.2434 10.0958 11.3366 10.1889L12.1343 9.39122C11.5021 8.75902 10.4734 8.75902 9.84127 9.39119Z" fill="#6E9C9F"/>
+                                <path d="M19.7483 7.43513L17.8551 5.54848L13.9234 9.47367L15.4476 11.0478C15.1921 11.5013 14.6379 12.3699 13.6933 13.3145C12.7487 14.2592 11.8737 14.8197 11.4159 15.0792L9.87261 13.5556L6.00226 17.4029L7.8851 19.2983C8.60485 20.0181 9.69998 20.2046 10.6102 19.7625C11.9992 19.0879 14.0955 17.8431 16.1943 15.7443C18.2931 13.6455 19.5379 11.5492 20.2125 10.1602C20.3723 9.83109 20.45 9.47787 20.45 9.12692C20.45 8.5072 20.2078 7.89464 19.7483 7.43513ZM19.1977 9.66732C18.5609 10.9785 17.3845 12.9587 15.3966 14.9466C13.4087 16.9345 11.4285 18.1109 10.1174 18.7477C9.63935 18.9799 9.06287 18.8806 8.6842 18.5019L7.59746 17.4079L9.87543 15.1436L11.1901 16.4415L11.5419 16.2849C11.5991 16.2595 12.9595 15.6438 14.4912 14.1121C16.0239 12.5795 16.6267 11.2305 16.6515 11.1739L16.8041 10.8268L15.5068 9.48705L17.8559 7.14178L18.9512 8.23327C19.3307 8.6133 19.4298 9.18952 19.1977 9.66732Z" fill="#6E9C9F"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_18947_425">
+                                    <rect width="17" height="17" fill="white" transform="translate(6 3)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+                </div>
+                <a href="#" class="header__bags">
+                    <img src="image/bags.png" alt="image-bags">
+                </a>
+                <div class="header__burger"><span></span></div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="cart">
+            <div class="container">
+                <h1 class="shop__title title__h1">Корзина</h1>
+                <div class="shop__breadcrumb">
+                    <ul class="breadcrumb__list breadcrumb">
+                        <li class="breadcrumb__item ">
+                            <a href="#" class="breadcrumb__link  subtitle">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <span class="breadcrumb__link active subtitle">Корзина</span>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" class="form__cart">
+                    <div class="form__cart-wrapper">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="form__table-header title__h4">Товар</th>
+                                    <th class="form__table-header title__h4">Цена</th>
+                                    <th class="form__table-header title__h4">Количество</th>
+                                    <th class="form__table-header padding-table title__h4">Всего</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="form__table-body subtitle">
+                                        <div class="form__table-media">
+                                            <button><img src="image/Close.png" alt="close"></button>
+                                            <img class="form__table-media-image" src="image/new collection/new_collection_one.jpg" alt="image">
+                                            <a href="product_details.html" class="form__table-media-subtitle subtitle">
+                                                Футболка USA
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <p class="form__table-price subtitle">$129</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form__table-count subtitle" value="1">
+                                    </td>
+                                    <td>
+                                        <p class="padding-table subtitle">$129</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="form__cart-wrapper-coupon">
+                            <input type="text" name="coupon" class="form-cart-coupon form__cart-coupon subtitle" placeholder="Введите купон">
+                            <button type="button" class="form-cart-coupon form__cart-btn subtitle">Применить купон</button>
+                            <button type="button" class="form-cart-coupon form__cart-btn subtitle">Обновить корзину</button>
+                        </div>
+                        <div class="form__cart-result">
+                            <p class="form__cart-result-text subtitle ">
+                                <span>Подытог:</span>
+                                <span>$129</span>
+                            </p>
+                            <p class="form__cart-finish-result title__h3">
+                                <span>Итого:</span>
+                                <span>$129</span>
+                            </p>
+                            <a href="checkout.html" type="submit" class="form__cart-submit btn subtitle">Оформить заказ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+       
+
+    
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <a href="#">
+                        <img src="image/logo.png" alt="logo">
+                    </a>
+                    <ul class="protection-list">
+                        <li class="protection-item">© Все права защищены</li>
+                        <li class="protection-item"><a href="#">Политика конфиденциальности</a></li>
+                        <li class="protection-item"><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item ">
+                            <a href="index.html" class="footer-nav__link">Главная</a></li>
+                        <li class="footer-nav__item ">
+                            <a href="shop.html" class="footer-nav__link">Магазин</a>
+                            <ul class="footer-nav__shop">
+                                <li class="footer-nav__shop-ltem">
+                                    <a href="shop.html" class="footer-nav__shop-link">Пальто</a>
+                                </li>
+                                <li class="footer-nav__shop-ltem">
+                                    <a href="shop.html" class="footer-nav__shop-link">Свитшоты</a>
+                                </li>
+                                <li class="footer-nav__shop-ltem">
+                                    <a href="shop.html" class="footer-nav__shop-link">Кардиганы</a>
+                                </li>
+                                <li class="footer-nav__shop-ltem">
+                                    <a href="shop.html" class="footer-nav__shop-link">Толстовки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="about_brand.html" class="footer-nav__link">О бренде</a></li>
+                        <li class="footer-nav__item">
+                            <a href="contacts.html" class="footer-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <div class="footer__contact">
+                        <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com">hello@womazing.com</a></div>
+                   
+                    <div class="footer__network">
+                        <!--noindex-->
+                        <a class="footer__network-link" href="[https://www.facebook.com](https://www.facebook.com/)"
+                         rel="nofollow nopener noreferrer" target="_blank">
+                         <img src="image/footer/facebook.png" alt="facebook"></a>
+                        <!--noindex-->
+                        <!--noindex-->
+                        <a class="footer__network-link" href="[https://www.instagram.com](https://www.instagram.com/)"
+                         rel="nofollow nopener noreferrer" target="_blank">
+                         <img src="image/footer/instagram.png" alt="instagram"></a>
+                        <!--noindex-->
+                        <!--noindex-->
+                        <a class="footer__network-link" href="[https://www.twitter.com](https://www.twitter.com/)"
+                         rel="nofollow nopener noreferrer" target="_blank">
+                         <img src="image/footer/twitter.png" alt="twitter"></a>
+                        <!--noindex-->
+                    </div>
+                    <img src="image/footer/visa-mastercard.png" alt="card">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
